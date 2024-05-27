@@ -1,0 +1,185 @@
+/* head */
+/* main */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+
+}
+@font-face {
+    font-family: "RedHatDisplay";
+    src:url(./assets/RedHatDisplay-VariableFont_wght.ttf);
+}
+body{
+    /* background-image: url(order-summary-component-main/images/pattern-background-mobile.svg); */
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center; 
+    background-color: hsl(225, 100%, 94%) ;
+    width: 100%;
+}
+.background{
+    width: 600px;
+    /* position: absolute; */
+    color: var(--Darkblue);
+    padding: 100px;
+    height: 300px;
+    /* position: relative; */
+}
+.flexcontainer{
+    /* position: relative; */
+    /* background-color: var(--Brightblue); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    /* border: 10px solid black; */
+    background-color: white;
+    /* width: 750px; */
+        max-width: 350px; 
+   
+  
+    border-radius: 10px;
+    /* margin-top: 0px; */
+     position: absolute; 
+    margin-top: 400px;
+    
+    width: 100%;
+
+
+}
+.song{
+    width: 350px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+h2{
+    color: hsl(223, 47%, 23%);
+    margin-top: 25px;
+    font-family: "RedHatDisplay";
+    font-weight: 700;
+  
+}
+.listen{
+    margin-top: 10px;
+    font-weight: 100;
+    font-family: "RedHatDisplay";
+    color: #8a8a8a;
+}
+.Annual{
+    background-color:  hsl(225, 100%, 98%);
+
+    /* padding: 15px 15px; */
+    border-radius: 10px;
+    display: flex;
+   padding: 10px;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 5px;
+}
+.annualeft{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.annualeft div{
+    margin-left: 20px;
+}
+.annualeft h5{
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.annualeft p{
+    font-size: 14px;
+    color: #8a8a8a;
+}
+.Annual a{
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    font-family: "RedHatDisplay";
+}
+.proceed{
+    color: var(--Verypaleblue);
+    padding: 15px 75px;
+    background-color: var(--Brightblue);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "RedHatDisplay";
+}
+.proceed:hover{
+    background-color: hsl(245, 49%, 55%);
+}
+.change{
+    text-decoration: underline;
+    color: var(--Brightblue);
+    font-family: "RedHatDisplay";
+    margin-left: 30px;
+  
+}
+.change:hover{
+    text-decoration: none;
+    color:hsl(245, 40%, 45%) ;
+}
+.cancel{
+    color: var(--Desaturatedblue);
+    font-family: "RedHatDisplay";
+    margin-top: 10px;
+}
+.cancel:hover{
+    color:hsl(227, 14%, 13%);
+    font-weight: 500;
+}
+.plan{
+    display: inline-block;
+    /* margin-bottom: 15px; */
+}
+.year{
+    
+    display: block;
+}
+.icon-music{
+    margin-top: 15px;
+}
+.anywhere{
+    margin-left:65px ;
+}
+/* footer */
+.attribution{
+  position: absolute;
+  margin-top: 900px;
+}
+@media screen and (max-width:390px) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .flexcontainer{
+        max-width: 85%;
+    }
+    .song{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:319px) {
+    .Annual{
+        padding:0px;
+        max-width: 82%;
+    }
+    .change{
+        font-size: smaller;
+        margin: 0;
+    }
+}
